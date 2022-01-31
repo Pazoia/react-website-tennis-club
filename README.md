@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# Tennis Club website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+- [Client requirements](#client-requirements)
+- [Technologies](#technologies)
+- [How to run program](#how-to-run-program)
+- [Project Status](#project-status)
 
-In the project directory, you can run:
+## Client requirements
 
-### `npm start`
+**Brief**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+> You are the accountant of a tennis club. You are also a renowned Front End developer who knows they cannot do anything without you. The first task in your list is to prepare a registration form for new users, which takes them to a welcome page with a list of all players in the club.  
+> You also want to make the website pleasant to use, to make it attractive to potential new club members, so you know all the tricks to make the user experience as neat as possible, with good use of colors and fonts.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**You may use**
 
-### `npm test`
+> HTML for markup (of course)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> Either plain CSS or a preprocessor, such as Sass/LESS. Use of UI frameworks such as Bootstrap is acceptable
 
-### `npm run build`
+> JavaScript or a JavaScript library/framework for interaction
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+> Save your code in a repository using version control software
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Things to consider**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> The register page will be used on desktop and mobile devices
 
-### `npm run eject`
+> It should ask at least for name, surname, email address and – of course – a password
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+> It may be useful for the user to know when they have made an error when using the form, and where
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> When the user clicks ‘Register’, display the submitted data in the console as a JSON object
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+> A successful registration should take the user to a welcome page with the list of players in descending order by points, but it would be nice if they could be sorted by other parameters
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+> You may want to collect a user’s nationality, favorite Pokémon or favorite Star Wars character. Consider connecting to an API and displaying data in a dropdown for the user to select  
+> Countries – https://restcountries.com/  
+> Pokémon – https://pokeapi.co/  
+> Star Wars - https://swapi.dev/
 
-## Learn More
+**Enjoy a challenge?**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+> Consider integrating the login form with the registration form, for returning users.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Technologies
 
-### Code Splitting
+- JavaScript
+- React
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## How to start website
 
-### Analyzing the Bundle Size
+> In root folder install react app dependencies with the command below:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+$ npm install
+```
 
-### Making a Progressive Web App
+> Start the React app with the command below:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
+$ npm start
+```
 
-### Advanced Configuration
+> Visit http://localhost:3000 et Voila, the app is running.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Project status
 
-### Deployment
+> To Do's
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. **Prepare a registration form for new users**
+   - Create a registration form component
+   - App.py returns registration form component
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> Done
