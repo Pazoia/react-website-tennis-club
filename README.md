@@ -73,5 +73,7 @@ $ npm start
 1. **Prepare a registration form for new users**
    - ✅ Create a registration form component
    - ✅ App.py returns registration form component
+   - ✅ Create new user object from user input
+   - ✅ Console log new user object to console
 
 > Done
