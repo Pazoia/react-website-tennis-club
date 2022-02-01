@@ -70,10 +70,20 @@ $ npm start
 
 > To Do's
 
+- Make website tennis themed
+
 1. **Prepare a registration form for new users**
+
    - ✅ Create a registration form component
    - ✅ App.py returns registration form component
    - ✅ Create new user object from user input
    - ✅ Console log new user object to console
+
+   - Make the registration form mobile friendly
+
+2. **Create NavBar Component**
+   - Create NavBar with Home and Register buttons
+   - When a user hits register open register component as a pop up window
+   - Make NavBar mobile friendly
 
 > Done
