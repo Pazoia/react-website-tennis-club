@@ -71,7 +71,7 @@ $ npm start
 > To Do's
 
 1. **Prepare a registration form for new users**
-   - Create a registration form component
-   - App.py returns registration form component
+   - ✅ Create a registration form component
+   - ✅ App.py returns registration form component
 
 > Done
