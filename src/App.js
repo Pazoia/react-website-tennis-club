@@ -1,8 +1,9 @@
-import './App.css';
+import './css/App.css';
+import UserRegistrationForm from "./components/UserRegistrationForm";
 
 function App() {
   return (
-    <h1>My Tennis Club</h1>
+    <UserRegistrationForm />
   );
 }
 
