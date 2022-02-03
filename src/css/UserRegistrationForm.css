@@ -1,9 +1,8 @@
 .register {
   width: 500px;
-  height: 600px;
-  background: red;
+  height: 550px;
   overflow: hidden;
-  background: green no-repeat center/ cover;
+  background: rgba(75, 125, 85, 0.6) no-repeat center/ cover;
   border-radius: 10px;
   box-shadow: 5px 20px 50px #000;
 }
@@ -39,7 +38,7 @@ button {
   justify-content: center;
   display: block;
   color: #fff;
-  background: #573b8a;
+  background: #ac8400;
   font-size: 1em;
   font-weight: bold;
   margin-top: 20px;
@@ -51,5 +50,6 @@ button {
 }
 
 button:hover {
-  background: #6d44b8;
+  font-size: 130%;
+  background: #aba501;
 }
