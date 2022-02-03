@@ -70,8 +70,6 @@ $ npm start
 
 > To Do's
 
-- Make website tennis themed
-
 1. **Prepare a registration form for new users**
 
    - ✅ Create a registration form component
@@ -87,3 +85,5 @@ $ npm start
    - Make NavBar mobile friendly
 
 > Done
+
+- ✅ Make website tennis themed
