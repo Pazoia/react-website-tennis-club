@@ -6,5 +6,7 @@ body {
   align-items: center;
   min-height: 100vh;
   font-family: "Jost", sans-serif;
-  background: blue;
+  background-image: url("../../public/images/tennis_court_beach.jpg");
+  background-size: cover;
+  overflow: hidden;
 }
