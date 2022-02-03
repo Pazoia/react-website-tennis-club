@@ -1,12 +1,13 @@
 import React from "react";
 
 import RegistrationForm from "./components/RegistrationForm";
-import "./css/App.css"
 
 class App extends React.Component {
   state = {
     members: {},
+    popupForm: false,
   }
+
 
   addMember = (member) => {
     const membersCopy = { ...this.state.members};
@@ -18,9 +19,19 @@ class App extends React.Component {
 
   render(){
     return (
-      <RegistrationForm 
-        addMember={this.addMember}
-      />
+      <div>
+        <h1 className="golden-sands">Golden Sands</h1>
+        <h2 className="tennis-club">Tennis Club</h2>
+        <button onClick={() => this.setState({
+          popupForm: true,
+        })}>
+          Register
+        </button>
+        <RegistrationForm 
+          trigger={this.state.popupForm}
+          addMember={this.addMember}
+        />
+      </div>
     );
   }
 }

@@ -24,19 +24,25 @@ class RegistrationForm extends React.Component {
         event.currentTarget.reset();
     };
 
+    handleSubmit = (event) => {
+        this.createMember(event);
+        // this.props.history.push("/members");
+    }
+
     render() {
-        return (                
+        return (this.props.trigger) ? (
             <div className="register">
-                <form onSubmit={this.createMember}>
+                <form onSubmit={this.handleSubmit}> 
                     <h1>Registration Form</h1>
                     <input name="name" ref={this.nameRef} type="text" placeholder="Name" required />
                     <input name="surname" ref={this.surnameRef} type="text" placeholder="Surname" required />
                     <input name="email" ref={this.emailRef} type="email" placeholder="Email" required />
                     <input name="password" ref={this.passwordRef} type="password" placeholder="Password" required />
                     <button type="submit">Register</button>
+                    {this.props.children}
                 </form>
             </div>                   
-        );
+        ) : "";
     }
 }
 
