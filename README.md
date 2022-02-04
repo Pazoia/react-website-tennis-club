@@ -64,7 +64,7 @@ $ npm install
 $ npm start
 ```
 
-> Visit http://localhost:3000 et Voila, the app is running.
+> Visit http://localhost:3000 on your browser and you should see the app running.
 
 ## Project status
 
@@ -77,10 +77,12 @@ $ npm start
    - ✅ Create new user object from user input
    - ✅ Console log new user object to console
 
+   - Registration form validates email and password before submiting user details
+   - Registration form inform user if any invalid details were entered and where
    - Make the registration form mobile friendly
 
 2. **Create NavBar Component**
-   - Create NavBar with Home and Register buttons
+   - Create NavBar with Home and Register/Sign in buttons
    - When a user hits register open register component as a pop up window
    - Make NavBar mobile friendly
 
