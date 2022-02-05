@@ -29,17 +29,6 @@ class App extends React.Component {
           </Routes>
         </Router>
       </>
-        // <h1 className="golden-sands">Golden Sands</h1>
-        // <h2 className="tennis-club">Tennis Club</h2>
-        // <button onClick={() => this.setState({
-        //   popupForm: true,
-        // })}>
-        //   Register
-        // </button>
-        // <RegistrationForm 
-        //   trigger={this.state.popupForm}
-        //   addMember={this.addMember}
-        // />
     );
   }
 }
