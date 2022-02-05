@@ -1,6 +1,8 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import RegistrationForm from "./components/RegistrationForm";
+import Navbar from "./components/Navbar";
+import "./css/App.css";
 
 class App extends React.Component {
   state = {
@@ -19,19 +21,25 @@ class App extends React.Component {
 
   render(){
     return (
-      <div>
-        <h1 className="golden-sands">Golden Sands</h1>
-        <h2 className="tennis-club">Tennis Club</h2>
-        <button onClick={() => this.setState({
-          popupForm: true,
-        })}>
-          Register
-        </button>
-        <RegistrationForm 
-          trigger={this.state.popupForm}
-          addMember={this.addMember}
-        />
-      </div>
+      <>
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path="/" exact />
+          </Routes>
+        </Router>
+      </>
+        // <h1 className="golden-sands">Golden Sands</h1>
+        // <h2 className="tennis-club">Tennis Club</h2>
+        // <button onClick={() => this.setState({
+        //   popupForm: true,
+        // })}>
+        //   Register
+        // </button>
+        // <RegistrationForm 
+        //   trigger={this.state.popupForm}
+        //   addMember={this.addMember}
+        // />
     );
   }
 }
