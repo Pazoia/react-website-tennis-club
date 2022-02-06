@@ -7,7 +7,7 @@ function Home() {
   return (
     <div className="home-container">
       <h1>GOLDEN SANDS</h1>
-      <p>Playing tennis by the beach!</p>
+      <p>Your tennis club at the beach!</p>
       <div className="join-us-btn">
         <Button
           link="/register"
