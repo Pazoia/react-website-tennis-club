@@ -23,11 +23,20 @@ class RegistrationForm extends React.Component {
     console.log(newMember);
     event.currentTarget.reset();
   };
-
+  
   handleSubmit = (event) => {
-    this.createMember(event);
+    
+    console.log(this.passwordRef.current.value);
+    event.preventDefault();
+    if (this.passwordRef.current.value.length < 8) {
+      document.getElementById("errorMsg").innerHTML = "Your password must inlcude atleast 8 characters!";
+      return false;
+    } else {
+      document.getElementById("errorMsg").innerHTML = "";
+      this.createMember(event);
+    }
   }
-
+  
   render() {
     return (
       <div className="registration-form-container">
@@ -37,8 +46,14 @@ class RegistrationForm extends React.Component {
             <input name="name" ref={this.nameRef} type="text" placeholder="Name" required />
             <input name="surname" ref={this.surnameRef} type="text" placeholder="Surname" required />
             <input name="email" ref={this.emailRef} type="email" placeholder="Email" required />
+            <div id="errorMsg"></div>
             <input name="password" ref={this.passwordRef} type="password" placeholder="Password" required />
-            <button className="reg-btn" type="submit">Register</button>
+            <button
+              className="reg-btn"
+              type="submit"
+              >
+                Register
+            </button>
           </form>
         </div>
       </div>
