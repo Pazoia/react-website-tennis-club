@@ -2,6 +2,10 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
+import Home from "./components/Home"
+import AboutUs from "./components/AboutUs";
+import Blog from "./components/Blog";
+import RegistrationForm from "./components/RegistrationForm";
 import "./css/App.css";
 
 class App extends React.Component {
@@ -25,7 +29,10 @@ class App extends React.Component {
         <Router>
           <Navbar />
           <Routes>
-            <Route path="/" exact />
+            <Route path="/" exact element={<Home />} />
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/register" element={<RegistrationForm addMember={this.addMember} />} />
           </Routes>
         </Router>
       </>
