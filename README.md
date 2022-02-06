@@ -81,11 +81,11 @@ $ npm start
    - Registration form inform user if any invalid details were entered and where
    - Make the registration form mobile friendly
 
-2. **Create NavBar Component**
-   - Create NavBar with Home and Register/Sign in buttons
-   - When a user hits register open register component as a pop up window
-   - Make NavBar mobile friendly
-
 > Done
 
 - ✅ Make website tennis themed
+
+2. **Create NavBar Component**
+   - ✅ Create NavBar with Home and Register/Sign in buttons
+   - ✅ When a user hits register open register component
+   - ✅ Make NavBar mobile friendly
