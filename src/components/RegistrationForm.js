@@ -15,6 +15,7 @@ class RegistrationForm extends React.Component {
       name: this.nameRef.current.value,
       surname: this.surnameRef.current.value,
       email: this.emailRef.current.value,
+      points: 1200,
       password: this.passwordRef.current.value,
     }
 
@@ -25,8 +26,6 @@ class RegistrationForm extends React.Component {
   };
   
   handleSubmit = (event) => {
-    
-    console.log(this.passwordRef.current.value);
     event.preventDefault();
     if (this.passwordRef.current.value.length < 8) {
       document.getElementById("errorMsg").innerHTML = "Your password must inlcude atleast 8 characters!";
