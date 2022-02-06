@@ -70,21 +70,30 @@ $ npm start
 
 > To Do's
 
-1. **Prepare a registration form for new users**
+- **Members list component**
 
-   - ✅ Create a registration form component
-   - ✅ App.py returns registration form component
-   - ✅ Create new user object from user input
-   - ✅ Console log new user object to console
-   - ✅ Make the registration form mobile friendly
-   - ✅ Registration form validates email and password before submiting user details
-   - ✅ Registration form inform user if any invalid details were entered and where
+  - ✅ Get data from state
+  - ✅ Create a sample with members to display
+  - ✅ Display members name, surname, points
+  - ✅ Display members in descending order by points
+
+- **Prepare a registration form for new users**
+
+  - ✅ Create a registration form component
+  - ✅ App.py returns registration form component
+  - ✅ Create new user object from user input
+  - ✅ Console log new user object to console
+  - ✅ Make the registration form mobile friendly
+  - ✅ Registration form validates email and password before submiting user details
+  - ✅ Registration form inform user if any invalid details were entered and where
+
+  - When user click register form navigates to members list
 
 > Done
 
 - ✅ Make website tennis themed
 
-2. **Create NavBar Component**
-   - ✅ Create NavBar with Home and Register/Sign in buttons
-   - ✅ When a user hits register open register component
-   - ✅ Make NavBar mobile friendly
+- **Create NavBar Component**
+  - ✅ Create NavBar with Home and Register/Sign in buttons
+  - ✅ When a user hits register open register component
+  - ✅ Make NavBar mobile friendly
