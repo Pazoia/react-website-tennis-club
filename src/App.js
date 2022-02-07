@@ -62,7 +62,7 @@ class App extends React.Component {
         <Router>
           <Navbar />
           <Routes>
-            <Route path="/" exact element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/blog" element={<Blog />} />
             <Route 
