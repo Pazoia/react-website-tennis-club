@@ -8,7 +8,7 @@ import Blog from "./components/Blog";
 import RegistrationForm from "./components/RegistrationForm";
 import MemberList from "./components/MembersList";
 import membersSample from "./members-sample";
-import { sortByPoints } from "./helper-functions";
+import { sortByPoints, sortByName, sortBySurname } from "./helper-functions";
 import "./css/App.css";
 
 class App extends React.Component {
@@ -20,15 +20,39 @@ class App extends React.Component {
   addMember = (member) => {
     const membersCopy = { ...this.state.members};
     membersCopy[`member${Date.now()}`] = member;
-    const sorted = sortByPoints(membersCopy)
+    const sortedByPoints = sortByPoints(membersCopy);
     this.setState({
-      members: sorted,
+      members: sortedByPoints,
     });
   };
 
   loadMembersSample = () => {
     this.setState({
       members: sortByPoints(membersSample),
+    });
+  };
+
+  sortMembersByName = () => {
+    const membersCopy = { ...this.state.members };
+    const sortedByName = sortByName(membersCopy);
+    this.setState({
+      members: sortedByName,
+    });
+  };
+
+  sortMembersBySurname = () => {
+    const membersCopy = { ...this.state.members };
+    const sortedBySurname = sortBySurname(membersCopy);
+    this.setState({
+      members: sortedBySurname,
+    });
+  };
+
+  sortMembersByPoints = () => {
+    const membersCopy = { ...this.state.members };
+    const sortedByPoints = sortByPoints(membersCopy);
+    this.setState({
+      members: sortedByPoints,
     });
   };
 
@@ -52,6 +76,9 @@ class App extends React.Component {
               element={<MemberList
                 members={this.state.members}
                 loadMembersSample={this.loadMembersSample}
+                sortMembersByName={this.sortMembersByName}
+                sortMembersBySurname={this.sortMembersBySurname}
+                sortMembersByPoints={this.sortMembersByPoints}
               />}
             />
           </Routes>

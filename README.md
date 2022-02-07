@@ -70,12 +70,11 @@ $ npm start
 
 > To Do's
 
-- **Members list component**
+- When user click register form navigates to members list
 
-  - ✅ Get data from state
-  - ✅ Create a sample with members to display
-  - ✅ Display members name, surname, points
-  - ✅ Display members in descending order by points
+> Done
+
+- ✅ Make website tennis themed
 
 - **Prepare a registration form for new users**
 
@@ -87,13 +86,16 @@ $ npm start
   - ✅ Registration form validates email and password before submiting user details
   - ✅ Registration form inform user if any invalid details were entered and where
 
-  - When user click register form navigates to members list
+- **Members list component**
 
-> Done
-
-- ✅ Make website tennis themed
+  - ✅ Get data from state
+  - ✅ Create a sample with members to display
+  - ✅ Display members name, surname, points
+  - ✅ Display members in descending order by points by default
+  - ✅ Options to sort list by name, surname, points implemented
 
 - **Create NavBar Component**
+
   - ✅ Create NavBar with Home and Register/Sign in buttons
   - ✅ When a user hits register open register component
   - ✅ Make NavBar mobile friendly

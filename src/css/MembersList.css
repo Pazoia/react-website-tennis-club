@@ -35,6 +35,12 @@
   margin: 25px 15px;
 }
 
+.sort-buttons {
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
 .samples-load {
   background-color: rgba(31, 31, 31, 0.687);
   color: #fff;
@@ -56,6 +62,10 @@
     font-weight: bold;
     font-size: 25px;
     padding: 10px;
+  }
+
+  .sort-buttons:hover {
+    font-weight: bold;
   }
 }
 
