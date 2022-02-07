@@ -33,6 +33,7 @@ class RegistrationForm extends React.Component {
     } else {
       document.getElementById("errorMsg").innerHTML = "";
       this.createMember(event);
+      this.props.navigate("/members-list")
     }
   }
   
@@ -48,6 +49,7 @@ class RegistrationForm extends React.Component {
             <div id="errorMsg"></div>
             <input name="password" ref={this.passwordRef} type="password" placeholder="Password" required />
             <button
+              onClick={this.props.loadMembersSample}
               className="reg-btn"
               type="submit"
               >

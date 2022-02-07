@@ -5,8 +5,8 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home"
 import AboutUs from "./components/AboutUs";
 import Blog from "./components/Blog";
-import RegistrationForm from "./components/RegistrationForm";
 import MemberList from "./components/MembersList";
+import RegistrationForm from "./components/WithRouter";
 import membersSample from "./members-sample";
 import { sortByPoints, sortByName, sortBySurname } from "./helper-functions";
 import "./css/App.css";
@@ -68,14 +68,16 @@ class App extends React.Component {
             <Route 
               path="/register"
               element={
-                <RegistrationForm addMember={this.addMember} />
+                <RegistrationForm
+                 addMember={this.addMember}
+                 loadMembersSample={this.loadMembersSample}
+                />
               }
             />
             <Route
               path="/members-list"
               element={<MemberList
                 members={this.state.members}
-                loadMembersSample={this.loadMembersSample}
                 sortMembersByName={this.sortMembersByName}
                 sortMembersBySurname={this.sortMembersBySurname}
                 sortMembersByPoints={this.sortMembersByPoints}
