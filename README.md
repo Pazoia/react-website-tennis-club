@@ -70,8 +70,6 @@ $ npm start
 
 > To Do's
 
-- When user click register form navigates to members list
-
 > Done
 
 - ✅ Make website tennis themed
@@ -85,6 +83,7 @@ $ npm start
   - ✅ Make the registration form mobile friendly
   - ✅ Registration form validates email and password before submiting user details
   - ✅ Registration form inform user if any invalid details were entered and where
+  - ✅ When user click register form navigates to members list
 
 - **Members list component**
 
