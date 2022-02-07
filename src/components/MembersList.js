@@ -29,9 +29,6 @@ class MembersList extends React.Component {
               <button className="sort-buttons" onClick={this.props.sortMembersByPoints}>sort by points</button>
             </ul>
           </div>
-          <button className="samples-load" type="submit" onClick={this.props.loadMembersSample}>
-            Load Members Sample
-          </button>
       </div>
     );
   }
