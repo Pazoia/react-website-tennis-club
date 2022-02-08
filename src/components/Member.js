@@ -7,9 +7,9 @@ class Member extends React.Component {
     
     return (
       <li className="member">
-        <p>{name}</p>
-        <p>{surname}</p>
-        <p>{points}</p>
+        <p className="member-detail">{name}</p>
+        <p className="member-detail">{surname}</p>
+        <p >{points}</p>
       </li>
     );
   }

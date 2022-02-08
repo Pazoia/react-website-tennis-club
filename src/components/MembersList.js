@@ -14,7 +14,7 @@ class MembersList extends React.Component {
               <li>Surname</li>
               <li>Points</li>
             </ul>
-            <ul className="Member">
+            <ul>
               {
                 Object.keys(this.props.members).map((key) => (
                   <Member
