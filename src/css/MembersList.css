@@ -30,7 +30,7 @@
   font-size: 25px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 20px;
   list-style: none;
   margin: 25px 15px;
 }
