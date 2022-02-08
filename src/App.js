@@ -14,7 +14,6 @@ import "./css/App.css";
 class App extends React.Component {
   state = {
     members: {},
-    popupForm: false,
   }
 
   addMember = (member) => {
